@@ -1,6 +1,6 @@
 {
   "name": "@hrg/pre-commit",
-  "version": "1.2.2-beta.0",
+  "version": "1.2.2-beta.1",
   "description": "Automatically install pre-commit hooks for your npm modules - yuvalsv fork",
   "main": "index.js",
   "scripts": {
