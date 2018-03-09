@@ -101,11 +101,7 @@ if(os.platform() === 'win32') {
   hookRelativeUnixPath = hookRelativeUnixPath.replace(/[\\\/]+/g, '/');
 }
 
-var precommitContent = '#!/usr/bin/env bash' + os.EOL
-  +  hookRelativeUnixPath + os.EOL
-  + 'RESULT=$?' + os.EOL
-  + '[ $RESULT -ne 0 ] && exit 1' + os.EOL
-  + 'exit 0' + os.EOL;
+var precommitContent = '#!/usr/bin/env bash' + os.EOL +  hookRelativeUnixPath + os.EOL + 'RESULT=$?' + os.EOL + '[ $RESULT -ne 0 ] && exit 1' + os.EOL + 'exit 0' + os.EOL;
 
 //
 // It could be that we do not have rights to this folder which could cause the
