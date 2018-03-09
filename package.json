@@ -1,7 +1,7 @@
 {
-  "name": "pre-commit",
-  "version": "1.2.2",
-  "description": "Automatically install pre-commit hooks for your npm modules.",
+  "name": "@hrg/pre-commit",
+  "version": "1.2.2-beta.0",
+  "description": "Automatically install pre-commit hooks for your npm modules - yuvalsv fork",
   "main": "index.js",
   "scripts": {
     "coverage": "istanbul cover ./node_modules/.bin/_mocha -- test.js",
@@ -14,7 +14,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/observing/pre-commit.git"
+    "url": "git://github.com/yuvalsv/pre-commit.git"
+  },
+  "publishConfig": {
+    "registry": "https://hrgtec.pkgs.visualstudio.com/_packaging/hrgtec/npm/registry/"
   },
   "keywords": [
     "git",
@@ -27,7 +30,7 @@
     "development"
   ],
   "author": "Arnout Kazemier <opensource@observe.it>",
-  "homepage": "https://github.com/observing/pre-commit",
+  "homepage": "https://github.com/yuvalsv/pre-commit",
   "license": "MIT",
   "dependencies": {
     "cross-spawn": "^5.0.1",
@@ -38,6 +41,6 @@
     "assume": "~1.5.0",
     "istanbul": "0.4.x",
     "mocha": "~3.3.0",
-    "pre-commit": "git://github.com/observing/pre-commit.git"
+    "pre-commit": "git://github.com/yuvalsv/pre-commit.git"
   }
 }
